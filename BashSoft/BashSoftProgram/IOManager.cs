@@ -12,7 +12,6 @@ namespace BashSoftProgram
         public static void TraverseDirectory(string path)
         {
             OutputWriter.WriteEmptyLine();
-            int initialIdentation = path.Split('\\').Length;
             var subFolders = new Queue<string>();
             subFolders.Enqueue(path);
             while(subFolders.Count!=0)
