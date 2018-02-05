@@ -10,9 +10,7 @@ namespace BashSoftProgram
     {
         public static void Main()
         {
-            StudentsRepository.InitializeData();
-            StudentsRepository.GetStudentScoresFromCourse("Unity","Ivan");
-
+            InputReader.StartReadingCommands();
         }
     }
 }
