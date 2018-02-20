@@ -97,7 +97,7 @@ namespace BashSoftProgram
             }
             else
             {
-                OutputWriter.DisplayException(ExceptionMessages.DataAlreadyInitializedException);
+                OutputWriter.DisplayException(ExceptionMessages.InexistingCourseInDataBase);
             }
             return false;
         }
@@ -140,7 +140,6 @@ namespace BashSoftProgram
                     studentsToTake = studentsByCourse[courseName].Count();
                 }
                 RepositoryFilters.FilterAndTake(studentsByCourse[courseName], givenFilter, studentsToTake.Value);
-
             }
         }
         public static void OrderAndTake(string courseName, string comparison, int? studentsToTake = null)
